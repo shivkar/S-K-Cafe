@@ -1,0 +1,15 @@
+
+/* Creater :Shivali
+Creation date:08/20/2021
+Last moified date:08/20/2021*/
+
+  body {background-color: #EEE8AA;color:blue; font-family: Georgia, Garamond,serif; max-width:900px; margin:auto}
+  header,footer {background-color:#DEB887;color:black;text-align:center;margin:4px;padding:10px ;height:80px;}
+  h1 {font-style:italic;font-size: 2.5em;}
+  nav {border-top:2px solid black;border-bottom:2px solid black;margin-top:4px;}
+  nav a {background-color: lightgrey;color:black;padding:8px;border:thin solid blue;display:block;margin:10px 10px;width:100px;float:left;text-align:center;}
+  a {font-size:1em;font-famiy:monospace;padding:10px;margin:4px;}
+   a:active {color:green;}
+   a:visited {color:black;}
+   a:hover{color:white;font-weight:bold;}
+   a:link {color:grey;}
