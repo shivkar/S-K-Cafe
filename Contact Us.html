@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<title>Contact us</title>
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> 
+<link href="restaurantstyles.css" rel="stylesheet" type="text/css" />
+<script type="text/Javascript" src="validation.js"></script>
+
+<style>
+  
+ label, fieldset{ 
+    font-size: 1em;border-radius:4px
+}
+
+input[type=text] {
+    
+    width: 50%;
+    padding: 6px 6px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    font-size: 1em;border-radius:4px;
+}
+
+
+select, textarea { border-radius:4px;
+    margin: 8px 8px;width:40%;
+    font-size: 1em; padding: 8px 8px;
+}
+
+input[type=submit] { 
+    font-size: 1em;
+    background-color: #546a7b;
+    color: #fef9ff;
+    padding: 4px ;margin-left:30%; 
+}
+
+input[type=submit]:hover {
+    background-color: #f2eded;
+    color: #546a7b;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    padding: 6px 6px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #fff;
+    resize: none;
+  
+    </style>
+</head>
+<body>
+
+         
+<main>
+<header class="jumbotron">
+<h1 class="display-3"> S & K Cafe</h1>
+<h3 class="text-left mt-4">S & K Cafe  is opening a new location!</h3>
+<div  class="carousel slide, btn badge-pill secondary" data-ride = "carousel" > 
+<div class="carousel-inner">
+<div class="carousel-item active ">
+<h4 >We're opening a new location!</h4>
+</div>
+<div class="carousel-item">
+<h5>We're rolling out our seasonal menu, with special options for this season.</h5>
+</div>
+<div class="carousel-item ">
+<h6>The Drink of the Month is SG Special Brew.</h6>
+</div>
+</div>
+</header>
+<nav>
+<p>
+<a class=" btn badge pill" href="S & K Cafe.html"><i class="fas fa-home"></i> Home</a>
+<a class=" btn badge pill" href="Menu.html"> Menu</a>
+<a class=" btn badge pill" href="Contact Us.html"> Contact Us</a></p>
+<div style="clear:both">
+</nav>
+
+<section style="text-align:justify;width:100%;margin:50px 200px;>
+<article id="Contact">
+<p>
+ <div class="form-group">
+<Form  name="contactForm"  onsubmit="return validateForm();" action="confirmation.html" method="POST">
+
+<label for="name">Name:</label> <!--FORM validation by javascript-->
+<input type="text"  class="form-control" name="name"  /> 
+<br />
+<div class="error" id="nameErr" ></div>
+
+<label for="email">Email:</label>
+<input type="text"  class="form-control" name="email" /> 
+<br />
+<div class="error" id="emailErr" ></div>
+
+<label for="phone">Phone:</lable>
+<input type="text"  class="form-control"  name="phone"/> 
+<br />
+<div class="error" id="phoneErr" ></div>
+
+<label for="inquiry" >Reason for Inquiry:</lable>
+<Select name="inquiry"  class="form-control">
+<option value="default" selected>Catering</option>
+<option value="party">Private Party</option>
+<option value="feedback">Feedback</option>
+<option value="others">Others</option>
+</select><br />
+
+<div class="error" id="inquiryErr"></div>
+
+<label for="info">Additional Information:</label>
+<textarea id="info"  class="form-control" name="info"></textarea><br /><br />
+
+
+<label for="visit">Have you been to the Restaurant:</label>
+
+<input type="radio"  name="choice" value="yes">
+<label for="choice1">Yes</label>
+
+
+<input type="radio" name="choice" value="no">
+<label for="choice2">No</label><br /><br />
+
+<div class="error" id="choiceErr" ></div>
+
+<label for="contact">Best day to contact you :</lable>
+
+<input type="checkbox" id="Monday" name="questionnaire" value="M">
+<label for="checkbox">M</label>
+
+<input type="checkbox" id="Tuesday" name="questionnaire" value="T">
+<label for="choice2">T</label>
+
+<input type="checkbox" id="wednesday" name="questionnaire" value="W">
+<label for="choice3">W</label>
+
+<input type="checkbox" id="Thusrday" name="questionnaire" value="Th">
+<label for="choice4">Th</label>
+
+<input type="checkbox" id="Friday" name="questionnaire" value="F">
+<label for="choice5">F</label><br /><br />
+
+
+</p>
+<label for="submit"></lable>
+<input type="submit" name="sendrequest" value="Send request">
+</div>
+</article>
+</section>
+
+<br />
+
+<footer>
+<p>Visit us: 23, Williams Pkwy, Brampton ON, L6V3A9.
+<br />
+Call on :+1 289-000-0000 (Morning 8 am to evening 10 pm)<p>
+</footer>
+
+</main>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+</body>
+</html>
+
